@@ -92,8 +92,7 @@ void opcontrol() {
 		int turn = master.get_analog(ANALOG_RIGHT_X);  // Gets the turn left/right from right joystick
 		left_mg.move(dir - turn);                      // Sets left motor voltage
 		right_mg.move(dir + turn);                     // Sets right motor voltage
-	/*
-	// sample motor code
+	/* sample motor code
 		if (master.get_digital(pros::E_CONTROLLER_DIGITAL_A)) {
     		intake_motor.move(100);
   		} else {
